@@ -8,7 +8,7 @@ If only I made this for my IA...
 > - Any code you write **will be lost** if you close or refresh the browser tab.  
 
 **Tip:**  
-In IB pseudocode, the "not equal to" operator for strings (and other comparisons) is `≠`.  
+In IB pseudocode, the "not equal to" operator for strings (and other comparisons) is "≠".  
 You can copy-paste it from here: `≠`
 
 This project is based on the **IB Pseudocode, algorithms, and guide** provided by the **International Baccalaureate Organization (IBO)**. Full credit goes to them for the official specification.
