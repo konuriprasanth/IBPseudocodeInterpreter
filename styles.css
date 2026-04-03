@@ -1,14 +1,44 @@
 body {
     font-family: 'Space Grotesk', sans-serif;
     height: 100vh;
-    overflow: hidden;
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
 }
 
-/* HEADER */
-header {
+/*header {
     padding: 10px 20px 10px 20px;
     background: #13161e;
     border-bottom: 1px solid #252a38;
+}*/
+
+.bg-myStyle {
+    background: url(assets/MeshGrad-FluroGreen.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-transparent {
+    background: transparent !important;
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px); /* for Safari */
+}
+
+.text-muted-white {
+    color: #f8f8f8;
+}
+
+.text-muted-white-70 {
+    color: #fdf2f2;
+}
+
+header{
+    padding: 10px;
+}
+
+nav{
+    z-index: 0;
+    border-radius: 8px;
+    border: 1.25px solid #f8f8f8ae;
 }
 
 .logo {
@@ -19,13 +49,15 @@ header {
 }
 
 .logo-badge {
-    background: #7c6af7;
+    background: /*#7c6af7*/#BE3455;
     font-family: 'JetBrains Mono', monospace;
     font-size: 15px;
     font-weight: 700;
+    font-style: normal;
     padding: 5px 7px;
+    letter-spacing: 0.21px;
     border-radius: 4px;
-    letter-spacing: 1px;
+    border: 1.5px solid #e06a86;
 }
 
 .logo-title {
