@@ -1,7 +1,7 @@
 # IB Pseudocode Interpreter
 If only I made this for my IA...
 
-**Status:** Beta  (still in development & features a shift to DaisyUI) 
+**Status:** Beta  (still in development & features a shift to DaisyUI and Glass Morphism.) 
 
 > **Note:**  
 > - The web app is **not mobile-friendly**.  
