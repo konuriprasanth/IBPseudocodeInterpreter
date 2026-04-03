@@ -12,15 +12,15 @@ body {
 }*/
 
 .bg-myStyle {
-    background: url(assets/MeshGrad-FluroGreen.svg);
+    background: url(assets/MeshGrad-FluroGreen.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-transparent {
     background: transparent !important;
-    backdrop-filter: blur(45px);
-    -webkit-backdrop-filter: blur(45px); /* for Safari */
+    backdrop-filter: blur(55px);
+    -webkit-backdrop-filter: blur(55px); /* for Safari */
 }
 
 .text-muted-white {
