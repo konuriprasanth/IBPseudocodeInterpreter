@@ -180,7 +180,14 @@ loop while NOT WAIT.isEmpty()
   output CLIENT
 end loop
 
-output "Queue empty: " , WAIT.isEmpty()`
+output "Queue empty: " , WAIT.isEmpty()`,
+
+placeholder: `// Welcome to the IB Pseudocode Interpreter!
+// This is a simple interpreter for a pseudocode language designed for educational purposes.
+// You can write code using variables, arrays, collections, stacks, queues, loops, conditionals, and more.
+// Use the "Examples" dropdown to load sample programs, or write your own in the editor.
+// The "Run" button will execute your code and show the output below.
+// Enjoy coding in IB Pseudocode!`
 };
 
 // ─── INTERPRETER ────────────────────────────────────────
@@ -1035,5 +1042,5 @@ function escapeHtml(s) {
 
 // Init
 updateLineNumbers();
-loadExample('averaging');
+loadExample('placeholder');
 document.querySelector('.example-btn').classList.add('active');
