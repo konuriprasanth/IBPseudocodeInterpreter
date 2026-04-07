@@ -1,3 +1,27 @@
+:root {
+    --bg: #0d0f14;
+    --surface: #13161e;
+    --surface2: #1a1e28;
+    --border: #252a38;
+    --border2: #2f3548;
+    --accent: #7c6af7;
+    --accent2: #5b4fcf;
+    --accent-glow: rgba(124,106,247,0.15);
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+    --cyan: #38bdf8;
+    --orange: #fb923c;
+    --text: #e2e8f0;
+    --text2: #94a3b8;
+    --text3: #64748b;
+    --kw: #c084fc;
+    --num: #38bdf8;
+    --str: #86efac;
+    --op: #fbbf24;
+    --comment: #4b5563;
+}
+
 body {
     font-family: 'Space Grotesk', sans-serif;
     height: 100vh;
@@ -5,11 +29,35 @@ body {
     padding: 0 0 0 0 !important;
 }
 
-/*header {
-    padding: 10px 20px 10px 20px;
-    background: #13161e;
-    border-bottom: 1px solid #252a38;
-}*/
+.drawer-side {
+    max-height: calc(100dvh - 22px) !important;
+    overflow: hidden;
+    border-radius: 8px;
+    background: transparent;
+    border: 1.25px solid #f8f8f8ae;
+}
+
+.drawer-overlay {
+    max-height: calc(100dvh - 22px) !important;
+    background: transparent;
+}
+
+.drawer-side ul {
+    min-height: unset !important;
+    height: 100dvh;
+    background: rgb(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(75px);
+    -webkit-backdrop-filter: blur(75px); /* for Safari */
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.navbar {
+    background: transparent;
+    border: 1px solid transparent;
+}
 
 .bg-myStyle {
     background: url(assets/MeshGrad-FluroGreen.png);
@@ -41,7 +89,6 @@ header{
 }
 
 nav{
-    z-index: 0;
     border-radius: 8px;
 }
 
@@ -362,3 +409,32 @@ textarea#editor::selection { background: #e06a86; }
 .stdin-field:focus { border-color: var(--accent); }
 
 .stdin-modal-footer { display: flex; gap: 8px; justify-content: flex-end; }
+
+/* Buttons - sidebar */
+.example-btn {
+    display: block;
+    height: 40px;
+    align-content: center;
+    width: 100%;
+    padding: 7px 14px;
+    padding-top: 4px;
+    background: transparent;
+    border: none;
+    color: var(--text3);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.1s;
+    border-left: 2px solid transparent;
+}
+.example-btn:hover {
+    background: var(--surface2);
+    color: var(--text);
+    border-left-color: var(--accent);
+}
+.example-btn.active {
+    background: var(--accent-glow);
+    color: var(--accent);
+    border-left-color: var(--accent);
+}
