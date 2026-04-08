@@ -4,7 +4,7 @@ If only I made this for my IA...
 **Status:** Alpha  (still in early development) 
 
 > **Note:**  
-> - The web app is **not mobile-friendly**.  
+> - The web app is **not mobile-friendly yet!** (currently being worked on).  
 > - Any code you write **will be lost** if you close or refresh the browser tab.  
 
 **Tip:**  
