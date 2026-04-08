@@ -4,7 +4,7 @@ If only I made this for my IA...
 **Status:** Beta  (still in development & features a shift to DaisyUI and Glass Morphism.) 
 
 > **Note:**  
-> - The web app is **not mobile-friendly**.  
+> - The web app is going to be **responsive**, through the use of DaisyUI.  
 > - Any code you write **will be lost** if you close or refresh the browser tab.  
 
 **Tip:**  
