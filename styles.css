@@ -29,25 +29,30 @@ body {
     padding: 0 0 0 0 !important;
 }
 
+.myBold {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-style: bold;
+}
+
 .drawer-side {
-    max-height: calc(100dvh - 22px) !important;
+    max-height: calc(100dvh - 23px) !important;
     overflow: hidden;
     border-radius: 8px;
     background: transparent;
-    border: 1.25px solid #f8f8f8ae;
 }
 
 .drawer-overlay {
-    max-height: calc(100dvh - 22px) !important;
-    background: transparent;
+    max-height: calc(100dvh - 23px) !important;
 }
 
 .drawer-side ul {
     min-height: unset !important;
     height: 100dvh;
-    background: rgb(255, 255, 255, 0.75) !important;
-    backdrop-filter: blur(75px);
-    -webkit-backdrop-filter: blur(75px); /* for Safari */
+    border: 1.25px solid #f8f8f8ae;
+    background: #be3455dd !important;
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px); /* for Safari */
 }
 
 .z-1 {
@@ -60,20 +65,23 @@ body {
 }
 
 .bg-myStyle {
-    background: url(assets/MeshGrad-FluroGreen.png);
+    background: url(assets/NewBG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-transparent {
     background: rgba(255, 255, 255, 0.111) !important;
-    backdrop-filter: blur(55px);
-    -webkit-backdrop-filter: blur(55px); /* for Safari */
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px); /* for Safari */
     border: 1.25px solid #f8f8f8ae;
+    background-image: url(assets/overlay.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text-white-shadow {
-    text-shadow: 0px 0px 2.5px rgba(248, 248, 248, 0.484);
+    text-shadow: 0px 0px 0.25px rgba(248, 248, 248, 0.484);
 }
 
 .text-muted-white {
@@ -112,7 +120,7 @@ nav{
 }
 
 .logo-title {
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 16px;
     font-weight: 800;
 }
@@ -420,7 +428,7 @@ textarea#editor::selection { background: #e06a86; }
     padding-top: 4px;
     background: transparent;
     border: none;
-    color: var(--text3);
+    color: #fff8f8;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 12px;
     text-align: left;
