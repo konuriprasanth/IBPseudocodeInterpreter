@@ -3,7 +3,8 @@ If only I made this for my IA...
 
 **Status:** Beta  (still in development & features a shift to DaisyUI and Glass Morphism.) 
 
-> **Note:**  
+> **Note:**
+> - The UI is still shockingly hideous in some areas, even after a stable beta deployment. Development on it is continous and a whole raft of updates to follow!
 > - The web app is going to be **responsive**, through the use of DaisyUI.  
 > - Any code you write **will be lost** if you close or refresh the browser tab.  
 
