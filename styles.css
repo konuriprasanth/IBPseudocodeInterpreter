@@ -65,7 +65,7 @@ body {
 }
 
 .bg-myStyle {
-    background: url(assets/NewBG.jpg);
+    background: url(assets/NewBGV2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -237,7 +237,7 @@ textarea#editor {
     line-height: 1.6;
     resize: none;
     tab-size: 4;
-    caret-color: #be3455;
+    caret-color: #bedded;
     overflow: auto;
 }
 
@@ -245,7 +245,7 @@ textarea#editor::selection { background: #e06a86; }
 
 /* Output Area */
 .output-panel {
-    width: 340px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-left: 1px solid transparent;
@@ -256,7 +256,6 @@ textarea#editor::selection { background: #e06a86; }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid transparent;
     flex-shrink: 0;
 }
 
@@ -267,6 +266,7 @@ textarea#editor::selection { background: #e06a86; }
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    padding: 0px;
     gap: 6px;
 }
 
@@ -303,7 +303,7 @@ textarea#editor::selection { background: #e06a86; }
 }
 @keyframes fadeIn { from { opacity:0; transform:translateY(2px); } to { opacity:1; transform:none; } }
 
-.output-line.stdout { color: var(--text); }
+.output-line.stdout { color: #ffffff; }
 .output-line.error { color: var(--red); }
 .output-line.info { color: var(--cyan); }
 .output-line.stdin-prompt { color: var(--yellow); }
@@ -329,7 +329,8 @@ textarea#editor::selection { background: #e06a86; }
 
 /* DaRestOfitAll */
 .vars-panel {
-    border-top: 1px solid var(--border);
+    border-top: 1px solid #e06a85bb;
+    padding-bottom: 4px;
     max-height: 180px;
     overflow-y: auto;
 }
@@ -437,12 +438,12 @@ textarea#editor::selection { background: #e06a86; }
     border-left: 2px solid transparent;
 }
 .example-btn:hover {
-    background: var(--surface2);
-    color: var(--text);
-    border-left-color: var(--accent);
+    background: #e06a86;
+    color: #ffffff;
+    border-left-color: #bedded;
 }
 .example-btn.active {
-    background: var(--accent-glow);
-    color: var(--accent);
-    border-left-color: var(--accent);
+    background: #e06a85bb;
+    color: #ffffff;
+    border-left-color: #bedded;
 }

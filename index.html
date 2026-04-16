@@ -42,14 +42,22 @@
                         <ul class="menu bg-base-200 min-h-full w-80 p-4 text-black">
                             <h1 class="text-lg text-primary-content py-2 px-4 myBold">Examples:</h1>
                         <!-- Sidebar content here -->
-                            <li><a class="example-btn" onclick="loadExample('averaging')">Averaging Array</a></li>
-                            <li><a class="example-btn" onclick="loadExample('dedup')">Dedup Collection</a></li>
-                            <li><a class="example-btn" onclick="loadExample('factors')">Factors</a></li>
-                            <li><a class="example-btn" onclick="loadExample('reversestack')">Reverse Stack</a></li>
-                            <li><a class="example-btn" onclick="loadExample('fibonacci')">Fibonacci</a></li>
-                            <li><a class="example-btn" onclick="loadExample('bubblesort')">Bubble Sort</a></li>
-                            <li><a class="example-btn" onclick="loadExample('binary')">Binary Search</a></li>
-                            <li><a class="example-btn" onclick="loadExample('queuedemo')">Queue Demo</a></li>
+                            <li><a class="example-btn" id="example-btn" onclick="loadExample('averaging')">Averaging Array</a></li>
+                            <li><a class="example-btn" id="example-btn" onclick="loadExample('dedup')">Dedup Collection</a></li>
+                            <li><a class="example-btn" id="example-btn" onclick="loadExample('factors')">Factors</a></li>
+                            <li><a class="example-btn" id="example-btn" onclick="loadExample('reversestack')">Reverse Stack</a></li>
+                            <li><a class="example-btn" id="example-btn" onclick="loadExample('fibonacci')">Fibonacci</a></li>
+                            <li><a class="example-btn" id="example-btn" onclick="loadExample('bubblesort')">Bubble Sort</a></li>
+                            <li><a class="example-btn" id="example-btn" onclick="loadExample('binary')">Binary Search</a></li>
+                            <li><a class="example-btn" id="example-btn" onclick="loadExample('queuedemo')">Queue Demo</a></li>
+                            <hr>
+                            <!-- STDIN Modal  -->
+                            <div class="io-section">
+                                <div class="sidebar-label text-lg text-primary-content pt-2 px-2 myBold">Input:</div>
+                                <div class="input-block">
+                                    <textarea class="input" id="stdinInput" placeholder="Lines of input...&#10;(used by 'input' statements)"></textarea>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -86,7 +94,7 @@
                     <div class="editor-container">
                         <div class="line-numbers" id="lineNumbers"></div>
                     <textarea id="editor" spellcheck="false" autocorrect="off" autocapitalize="off"
-                        placeholder="// Write IB pseudocode here...&#10;// Variables: ALL_CAPS&#10;// Keywords: lowercase"></textarea>
+                        placeholder="Start typing your pseudocode here..."></textarea>
                     </div>
                 </div>
             </div>
@@ -99,7 +107,7 @@
                             <div class="status-dot" id="statusDot"></div>
                             Output
                         </h3>
-                        <button class="btn btn-ghost" style="padding:3px 8px;font-size:11px;" onclick="clearOutput()">✕</button>
+                        <button class="btn btn-ghost" style="padding:3px 8px;font-size:11px;" onclick="clearOutput()">X</button>
                     </div>
                     <div class="output-content" id="outputContent">
                         <div class="empty-state">Press Run to execute your pseudocode</div>
@@ -116,29 +124,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-    <!-- Old Layout -->
-    
-
-    <!-- OUTPUT -->
-    
-
-    <!-- STDIN Modal 
-    <div class="stdin-overlay" id="stdinOverlay">
-        <div class="stdin-modal">
-            <h3>Input Required</h3>
-            <p id="stdinPromptText">Enter a value:</p>
-            <input type="text" class="stdin-field" id="stdinModalInput" placeholder="Type here and press Enter">
-            <div class="stdin-modal-footer">
-            <button class="btn btn-primary" onclick="submitStdin()">Submit</button>
-            </div>
-        </div>
-    </div> -->
-
-
 
 
     <!-- Custom Scripts -->
