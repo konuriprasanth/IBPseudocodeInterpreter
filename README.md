@@ -1,4 +1,4 @@
-# IB Pseudocode Interpreter
+# IB Pseudocode Interpreter (0.2.7)
 If only I made this for my IA...
 
 **Status:** Beta  (still in development & features a shift to DaisyUI and Glass Morphism.) 
