@@ -5,7 +5,8 @@ If only I made this for my IA...
 
 > **Note:**
 > - The UI is still shockingly hideous in some areas, even after a stable beta deployment. Development on it is continous! A raft of updates to follow!
-> - The web app is going to be **responsive**, through the use of DaisyUI.  
+> - The web app is going to be **responsive**, through the use of DaisyUI.
+> - The goal of Responsiveness on mobile has been achieved, but, the layout is all messed up! A patch/fix coming soon! 
 > - Any code you write **will be lost** if you close or refresh the browser tab.
 > - Any input is made via the "Input" text box inside the side drawer.
 
