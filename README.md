@@ -6,7 +6,8 @@ If only I made this for my IA...
 > **Note:**
 > - The UI is still shockingly hideous in some areas, even after a stable beta deployment. Development on it is continous! A raft of updates to follow!
 > - The web app is going to be **responsive**, through the use of DaisyUI.  
-> - Any code you write **will be lost** if you close or refresh the browser tab.  
+> - Any code you write **will be lost** if you close or refresh the browser tab.
+> - Any input is made via the "Input" text box inside the side drawer.
 
 **Tip:**  
 In IB pseudocode, the "not equal to" operator for strings (and other comparisons) is "≠".  
